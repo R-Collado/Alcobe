@@ -5,14 +5,55 @@ body {
     font-size: 1.4rem;
 }
 
-.heading {
+h1,
+.h1 {
+    position: absolute;
+    z-index: 1;
+    font-size: var(--fs-600);
+    animation: moveInRight 1s ease-out;
+}
 
-    &-primary {
-        position: absolute;
-        color: white;
-        top: 25%;
-        font-size: 15rem;
-        animation: moveInRight 1s ease-out;
-    }
+.heading-subtitle {
+    position: absolute;
+    z-index: 1;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-400);
+    letter-spacing: .5rem;
+    margin-top: 10rem;
+    animation: moveInLeft 1s ease-out;
+}
+
+.section-title {
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--fg);
+    background: var(--bg);
+    padding: 1rem 1rem;
+    margin-bottom: 4rem;
     
+}
+
+
+
+
+@media (min-width: 640px) {
+    h1,
+    .h1 {
+        font-size: var(--fs-900);
+    }
+
+    .heading-subtitle {
+
+        margin-top: 20rem;
+        font-size: var(--fs-400);
+    }
+}
+
+@media (min-width: 820px) {
+    
+
+    .heading-subtitle {
+        font-size: var(--fs-600);
+        
+    }
 }
